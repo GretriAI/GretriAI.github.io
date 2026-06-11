@@ -47,131 +47,14 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-            <tr onmouseout="nerv_stop()" onmouseover="nerv_start()">
-              <td style="padding:16px;width:20%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='nerv_image'><video  width=100% height=100% muted autoplay loop>
-                  <source src="images/hotdog.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                  </video></div>
-                  <img src='images/hotdog.jpg' width="160">
-                </div>
-                <script type="text/javascript">
-                  function nerv_start() {
-                    document.getElementById('nerv_image').style.opacity = "1";
-                  }
-
-                  function nerv_stop() {
-                    document.getElementById('nerv_image').style.opacity = "0";
-                  }
-                  nerv_stop()
+           
                 </script>
 				  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <a href="https://pratulsrinivasan.github.io/nerv/">
-                  <span class="papertitle">NeRV: Neural Reflection and Visibility Fields for Relighting and View Synthesis</span>
-                </a>
-                <br>
-                <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-                <a href="https://boyangdeng.com/">Boyang Deng</a>,
-                <a href="https://people.csail.mit.edu/xiuming/">Xiuming Zhang</a>, <br>
-                <a href="http://matthewtancik.com/">Matthew Tancik</a>,
-                <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-                <strong>Jonathan T. Barron</strong>
-                <br>
-                <em>CVPR</em>, 2021
-                <br>
-                <a href="https://pratulsrinivasan.github.io/nerv/">project page</a> /
-                <a href="https://www.youtube.com/watch?v=4XyDdvhhjVo">video</a> /
-                <a href="https://arxiv.org/abs/2012.03927">arXiv</a>
-                <p></p>
-                <p>Using neural approximations of expensive visibility integrals lets you recover relightable NeRF-like models.</p>
-              </td>
-            </tr>
+             
 
 
-            <tr onmouseout="lssr_stop()" onmouseover="lssr_start()">
-              <td style="padding:16px;width:20%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='lssr_image'>
-                    <img src='images/lssr_after.jpg' width="160"></div>
-                  <img src='images/lssr_before.jpg' width="160">
-                </div>
-                <script type="text/javascript">
-                  function lssr_start() {
-                    document.getElementById('lssr_image').style.opacity = "1";
-                  }
-
-                  function lssr_stop() {
-                    document.getElementById('lssr_image').style.opacity = "0";
-                  }
-                  lssr_stop()
-                </script>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <a href="http://cseweb.ucsd.edu/~viscomp/projects/SIGA20LightstageSuperres/">
-                  <span class="papertitle">Light Stage Super-Resolution: Continuous High-Frequency Relighting</span>
-                </a>
-                <br>
-                <a href="http://kevinkingo.com/">Tiancheng Sun</a>,
-                <a href="https://cseweb.ucsd.edu/~zex014/">Zexiang Xu</a>
-                <a href="http://people.csail.mit.edu/xiuming/">Xiuming Zhang</a>,
-                <a href="http://www.seanfanello.it/">Sean Fanello</a>,
-                <a href="https://scholar.google.com/citations?user=5D0_pjcAAAAJ&hl=en">Christoph Rhemann</a>, <br>
-                <a href="https://www.pauldebevec.com/">Paul Debevec</a>,
-                <a href="https://research.google/people/105312/">Yun-Ta Tsai</a>,
-                <strong>Jonathan T. Barron</strong>,
-                <a href="https://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>
-                <br>
-                <em>SIGGRAPH Asia</em>, 2020  
-                <br>
-                <a href="http://cseweb.ucsd.edu/~viscomp/projects/SIGA20LightstageSuperres/">project page</a> / 
-                <a href="https://arxiv.org/abs/2010.08888">arXiv</a>
-                <p></p>
-                <p>
-                  Scans for light stages are inherently aliased, but we can use learning to super-resolve them.
-                </p>
-              </td>
-            </tr> 
-
-            <tr>
-              <td style="padding:16px;width:20%;vertical-align:middle">
-                <img src="images/safs.jpg" alt="safs_small" width="160" height="160" style="border-style: none">
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <a href="https://drive.google.com/file/d/1EZTOO5xezLYcyIFgAzs4KuZFLbTcwTDH/view?usp=sharing">
-                  <span class="papertitle">High-Frequency Shape and Albedo from Shading using Natural Image Statistics</span>
-                </a>
-                <br>
-                <strong>Jonathan T. Barron</strong>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>
-                <br>
-                <em>CVPR</em>, 2011
-                <br>
-                <a href="data/BarronMalikCVPR2011.bib">bibtex</a>
-                <p>This paper is subsumed by <a href="#SIRFS">SIRFS</a>.</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:16px;width:20%;vertical-align:middle">
-                <img src="images/fast_texture.jpg" alt="fast-texture" width="160" height="160">
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <a href="https://drive.google.com/file/d/1rc05NatkQVmUDlGCAYcHSrvAzTpU9knT/view?usp=sharing">
-                  <span class="papertitle">Discovering Efficiency in Coarse-To-Fine Texture Classification</span>
-                </a>
-                <br>
-                <strong>Jonathan T. Barron</strong>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>
-                <br>
-                <em>Technical Report</em>, 2010
-                <br>
-                <a href="data/BarronTR2010.bib">bibtex</a>
-                <p>A model and feature representation that allows for sub-linear coarse-to-fine semantic segmentation.
-                </p>
-              </td>
-            </tr>
+          
 
             <tr>
               <td style="padding:16px;width:20%;vertical-align:middle">
